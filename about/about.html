@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Oswald&family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo" playsinline>
+        <source src="v1.mp4" type="video/mp4">
+    </video>
+    
+    <div class="overlay">
+        
+        <div class="hello">
+            <h1> About</h1>
+        <h2>Hello! My name is Ekaterina.
+       <p>I'm web developer from Tampa,FL.
+        <p>I like to create smart user interface and imagine useful interaction, 
+        <p>developing rich web experience & web applications.
+            <p>Skills: Java Script, HTML,CSS,Bootstrap,React,Figma</p>
+            <p> Development&Operations: Visual Studio,GitHub,Codepen</p>
+        </h2>
+    
+         <button id="btn"><a href="/index.html">Back</a>
+         </button>
+        </div>
+    </div>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      /* paste this line in verbatim */
+      window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+      /* customize formbutton below*/     
+      formbutton("create", {
+        action: "https://formspree.io/f/xoqbjojk",
+        title: "Contact Me",
+        fields: [
+          { 
+            type: "email", 
+            label: "Email:", 
+            name: "email",
+            required: true,
+            placeholder: "your@email.com"
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "Hello, my name is..",
+          },
+          { type: "submit" }      
+        ],
+        styles: {
+          title: {
+            backgroundColor: "pink"
+          },
+          button: {
+            backgroundColor: "violet"
+          }
+        }
+      });
+    </script>
+    
+    
+
+    <script src="/index.js"></script>
+</body>
+</html>
